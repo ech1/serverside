@@ -4,7 +4,7 @@
 #run this script like so :
 cd ~
 sudo apt update -y && sudo apt upgrade -y
-sudo apt-get install build-essential libpcre3 libpcre3-dev libssl-dev zlib1g zlib1g-dev -y
+sudo apt-get install rtorrent build-essential libpcre3 libpcre3-dev libssl-dev zlib1g zlib1g-dev -y
 
 
 #THE VERSION CAN CHANGE OVER TIME VISIT :
