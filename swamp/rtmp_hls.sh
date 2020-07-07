@@ -59,7 +59,7 @@ systemctl enable nginx
 
 cd -
 
-curl -sk https://raw.githubusercontent.com/ech1/serverside/scripts/swamp_cinema/nginx.conf > /etc/nginx/nginx.conf
+curl -sk https://raw.githubusercontent.com/ech1/serverside/master/swamp/nginx.conf > /etc/nginx/nginx.conf
 
 #sudo nano /etc/nginx/nginx.conf
 /usr/sbin/nginx -t
@@ -85,7 +85,7 @@ systemctl start nginx
 cd /home
 sudo mkdir swamp
 cd swamp
-sudo wget https://github.com/ech1/serverside/raw/master/scripts/swamp_cinema/test.mp4
+sudo wget https://github.com/ech1/serverside/raw/master/swamp/test.mp4
 
 echo
 echo
