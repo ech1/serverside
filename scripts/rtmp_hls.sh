@@ -59,7 +59,7 @@ systemctl enable nginx
 
 cd -
 
-curl -sk https://ech1.netlify.app/conf/nginx.conf > /etc/nginx/nginx.conf
+curl -sk https://raw.githubusercontent.com/ech1/serverside/scripts/swamp_cinema/nginx.conf > /etc/nginx/nginx.conf
 
 #sudo nano /etc/nginx/nginx.conf
 /usr/sbin/nginx -t
