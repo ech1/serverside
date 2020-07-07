@@ -85,7 +85,7 @@ systemctl start nginx
 cd /home
 sudo mkdir swamp
 cd swamp
-sudo wget https://ech1.netlify.app/conf/test.mp4
+sudo wget https://github.com/ech1/serverside/raw/master/scripts/swamp_cinema/test.mp4
 
 echo
 echo
