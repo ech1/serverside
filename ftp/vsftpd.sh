@@ -6,7 +6,7 @@ sudo apt install vsftpd wget curl
 sudo systemctl stop vsftpd
 cd /etc
 sudo rm vsftpd.conf
-sudo wget https://raw.githubusercontent.com/ech1/serverside/master/keepass/vsftpd.conf
+sudo wget https://raw.githubusercontent.com/ech1/serverside/master/ftp/vsftpd.conf
 sudo systemctl start vstfpd
 sudo systemctl enable vsftpd
 echo '[+] FINISHED, you can connect to the following ip :'
