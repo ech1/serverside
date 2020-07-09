@@ -1,10 +1,10 @@
 #!/bin/bash
-echo '[+] Setting up your KeePass Server'
+echo '[+] Setting up your VSFTPD Server'
 sudo apt update -y
 sudo apt upgrade -y
 sudo apt install vsftpd wget curl
 sudo systemctl stop vsftpd
-sudo cd /etc
+cd /etc
 sudo rm vsftpd.conf
 sudo wget https://raw.githubusercontent.com/ech1/serverside/master/keepass/vsftpd.conf
 sudo systemctl start vstfpd
