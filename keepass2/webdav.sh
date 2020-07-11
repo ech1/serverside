@@ -12,13 +12,15 @@ sudo chown -R www-data:www-data /var/www/
 #then we have to edit the main virtual host config with root priv
 #sudo nano /etc/apache2/sites-avaialable/000-default.conf
 cd /etc/apache2/sites-available
-sudo curl https://raw.githubusercontent.com/ech1/serverside/master/keepass2/000-default.conf
+sudo rm -rf 00*
+sudo wget https://raw.githubusercontent.com/ech1/serverside/master/keepass2/000-default.conf
 
+echo '[+] CREATING THE USER!  ENTER PASSWD'
 sudo htdigest -c /etc/apache2/users.password webdav $USER
 sudo chown www-data:www-data /etc/apache2/users.password
 
 sudo a2enmod auth_digest
-sudo service apache2 restart
+sudo systemctl apache2 restart
 
 sudo ip a | grep inet
 #the url is http://<IP>/webdav
