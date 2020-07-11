@@ -22,6 +22,6 @@ sudo chown www-data:www-data /etc/apache2/users.password
 sudo a2enmod auth_digest
 sudo systemctl apache2 restart
 
-sudo ip a | grep inet
+ip a | grep inet
 #the url is http://<IP>/webdav
 #or dav://<IP>/webdav
