@@ -5,7 +5,6 @@ sudo apt install apache2 apache2-utils curl wget -y
 sudo a2enmod dav
 sudo a2enmod dav_fs
 
-sudo mkdir /webdav
 sudo mkdir /var/www/webdav
 sudo chown -R www-data:www-data /var/www/
 
