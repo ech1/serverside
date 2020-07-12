@@ -12,7 +12,7 @@ sudo chown -R www-data:www-data /var/www/
 #sudo nano /etc/apache2/sites-avaialable/000-default.conf
 cd /etc/apache2/sites-available
 sudo rm -rf 00*
-sudo wget https://raw.githubusercontent.com/ech1/serverside/master/keepass2/000-default.conf
+sudo wget https://raw.githubusercontent.com/ech1/serverside/master/webdav/000-default.conf
 
 echo '[+] CREATING THE USER!  ENTER PASSWD'
 sudo htdigest -c /etc/apache2/users.password webdav $USER
