@@ -1,0 +1,9 @@
+blog repo : 
+-serverside directory
+-1 tutorial html per server setup script
+
+serverside repo:
+-openvpn
+-wireguard
+-tiny irc
+-nextcloud but compiled and shit
