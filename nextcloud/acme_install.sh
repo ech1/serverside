@@ -6,7 +6,7 @@ chmod -R 775 /var/www/letsencrypt /etc/letsencrypt && chown -R www-data:www-data
 
 var=1
 while [ $var -eq 1 ];
-then
+do
         echo 'enter your domain'
         read domain
         echo 'Are you sure ? (y/n)'
