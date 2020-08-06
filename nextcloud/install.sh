@@ -10,6 +10,21 @@ read choice
 if [ $choice -eq "1" ];
 then
 	wget debian_install.sh
+	mv ubuntu_install.sh install.sh
 else
 	wget ubuntu_install.sh
+	mv ubuntu_install.sh install.sh
 fi
+
+sudo chmod +x install.sh
+./install.sh
+
+
+############ AFTERWARDS : ACME.SH #############
+
+adduser acmeuser
+usermod -a -G www-data acmeuser
+su - acmeuser
+
+exit
+
