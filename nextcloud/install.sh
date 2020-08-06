@@ -16,7 +16,7 @@ else
 	mv ubuntu_install.sh install.sh
 fi
 
-sudo chmod +x install.sh
+chmod +x install.sh
 ./install.sh
 
 
