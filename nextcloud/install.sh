@@ -9,10 +9,10 @@ read choice
 
 if [ $choice -eq "1" ];
 then
-	wget debian_install.sh
-	mv ubuntu_install.sh install.sh
+	wget https://raw.githubusercontent.com/ech1/serverside/master/nextcloud/debian_install.sh
+	mv debian_install.sh install.sh
 else
-	wget ubuntu_install.sh
+	wget https://raw.githubusercontent.com/ech1/serverside/master/nextcloud/ubuntu_install.sh
 	mv ubuntu_install.sh install.sh
 fi
 
