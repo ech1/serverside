@@ -9,8 +9,8 @@ sudo systemctl reload ssh
 
 #WE ARE ON THE SERVER !!!
 #So we generate the public ssh key
-ssh-keygen -t ed25519
 cd ~/.ssh/
+ssh-keygen -t ed25519
 cat id_ed25519.pub >> authorized_keys
 
 #ssh server has the public key
