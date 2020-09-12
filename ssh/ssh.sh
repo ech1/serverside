@@ -16,6 +16,7 @@ cat id_ed25519.pub >> authorized_keys
 #ssh server has the public key
 #we give the private key to the user somehow
 #the user puts id_ed25519 into his own ~/.ssh/
+#and he does "chmod 600 ~/.ssh/id_ed25519"
 #and only after he can login
 
 
