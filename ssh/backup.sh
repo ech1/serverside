@@ -25,3 +25,4 @@ rm backup*.zip
 
 #BACKUP_SERVER (192.168.0.18)
 #https://github.com/ech1/serverside/blob/master/ssh/ssh.sh
+#MAKE SURE rsync IS ON THE CLIENT AND SERVER !!!
