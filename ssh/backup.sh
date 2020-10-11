@@ -6,7 +6,7 @@ then
         exit
 fi
 
-cd /var/snap/nextcloud/common/nextcloud/data/nothing/files/
+cd /var/www/nextcloud/data/nothing/files/
 
 #faut le run a 3AM
 cooldate=$(date --iso-8601)
@@ -14,15 +14,15 @@ echo $cooldate
 
 rm backup*.zip
 rm backup-$cooldate.zip
-zip -r backup-$cooldate.zip /var/snap/nextcloud/common/nextcloud/data/nothing/files/
+zip -r backup-$cooldate.zip /var/www/nextcloud/data/nothing/files/
 rsync backup-$cooldate.zip nothing@192.168.0.18:/home/nothing/backup/
 rm backup*.zip
 
-#crontab -e 
-#0 3 * * * /bin/bash /var/snap/nextcloud/common/nextcloud/data/nothing/files/backup.sh
+#crontab -e
+#0 3 * * * /bin/bash /var/www/nextcloud/data/nothing/files/backup.sh
 
 #chmod u+x backup.sh
 
 #BACKUP_SERVER (192.168.0.18)
 #https://github.com/ech1/serverside/blob/master/ssh/ssh.sh
-#MAKE SURE rsync IS ON THE CLIENT AND SERVER !!!
+#https://github.com/ech1/serverside/blob/master/ssh/ssh_arch.sh
