@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo apt update -y
-sudo apt install openssh-server
+sudo apt install openssh-server rsync
 sudo systemctl status ssh
 cd /etc/ssh
 sudo rm sshd_config
