@@ -1,7 +1,7 @@
 #!/bin/sh
 
 sudo pacman -Syu
-sudo pacman -S openssh
+sudo pacman -S openssh rsync
 cd /etc/ssh
 sudo rm sshd_config
 sudo wget https://raw.githubusercontent.com/ech1/serverside/master/ssh/sshd_config
