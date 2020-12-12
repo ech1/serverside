@@ -5,10 +5,11 @@ sudo systemctl status ssh
 cd /etc/ssh
 sudo rm sshd_config
 sudo wget https://raw.githubusercontent.com/ech1/serverside/master/ssh/sshd_config
-sudo systemctl reload ssh
+sudo systemctl restart ssh
 
 #WE ARE ON THE SERVER !!!
 #So we generate the public ssh key
+mkdir ~/.ssh/
 cd ~/.ssh/
 ssh-keygen -t ed25519
 cat id_ed25519.pub >> authorized_keys
@@ -19,8 +20,5 @@ cat id_ed25519.pub >> authorized_keys
 #and he does "chmod 600 ~/.ssh/id_ed25519"
 #and only after he can login
 
-
-
-
-sudo systemctl start ssh
+sudo systemctl restart ssh
 
