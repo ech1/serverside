@@ -26,5 +26,14 @@ cat id_ed25519.pub >> authorized_keys
 #and he does "chmod 600 ~/.ssh/id_ed25519"
 #and only after he can login
 
-systemctl status ssh
+systemctl status sshd
+ip a | grep inet
+
+echo '[+] ON A REMOTE HOST RUN THE FOLLOWING:'
+echo '[+] wget http://ip:8080/id25519 -O ~/.ssh/node.pkey'
+echo '[+] chmod 600 ~/.ssh/node.pkey'
+cd ~/.ssh/
+
+python3 -m http.server 8080
+
 
